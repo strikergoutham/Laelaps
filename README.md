@@ -56,7 +56,7 @@ plugin4
 example whitelist file looks like this.
 ```bash
 {"service1":["route-id1","route-id2"],"service2":[],"service3":["route-id3"]}
-'''
+```
 here, we whitelist two routes "route-id1","route-id2" of service "service1" from mandatory plugin scan. if we want to whitelist the whole service from the scan, we an do as done for service2 with routes as empty list.
 
 #### Now you are ready to run Laelaps! Set it up as cron job for real time monitoring.

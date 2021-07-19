@@ -42,7 +42,7 @@ USERNAME_KONG='' #username of the kong schema
 PWD_KONG=''   #password to the kong schema
 HOST_KONG='' #db host
 schema_kong='' #schema name
-slack_WebHookURL='' #slak webhook url for receiving the alerts
+slack_WebHookURL='' #slack webhook url for receiving the alerts
 ```
 ### define which plugins to monitor in the "monitored_plugins.txt" file
 example file: 
@@ -57,7 +57,7 @@ example whitelist file looks like this.
 ```bash
 {"service1":["route-id1","route-id2"],"service2":[],"service3":["route-id3"]}
 ```
-here, we whitelist two routes "route-id1","route-id2" of service "service1" from mandatory plugin scan. if we want to whitelist the whole service from the scan, we an do as done for service2 with routes as empty list.
+here, we whitelist two routes "route-id1","route-id2" of service "service1" from mandatory plugin scan. if we want to whitelist the whole service from the scan, we can do as done for service2 with routes as empty list.
 
 #### Now you are ready to run Laelaps! Set it up as cron job for real time monitoring.
 

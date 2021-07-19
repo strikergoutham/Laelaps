@@ -67,4 +67,4 @@ here, we whitelist two routes "route-id1","route-id2" of service "service1" from
 
 ![Laelaps](/images/Laelaps5.PNG)
 
-## A big thanks to my teammate @akshaya(https://www.linkedin.com/in/akshaya-venkateswara-raja/) who did the initial brainstorming and co owns the code, without her the project would be dead.
+### A big thanks to my teammate @akshaya(https://www.linkedin.com/in/akshaya-venkateswara-raja/) who did the initial brainstorming and co owns the code, without her the project would be dead.

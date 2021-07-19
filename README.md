@@ -14,8 +14,8 @@ Laelaps is an automated monitoring tool for kong gateway. Laelaps is useful for 
  
  ## It monitors periodically for the following events :
  
- 1. If a route gets deployed without the mandatory plugin.
- 2. If a mandatory plugins is removed from the existing routes.
+ 1. If a route/API endpoint gets deployed/exposed without the mandatory plugin.
+ 2. If a mandatory plugins is removed from the existing routes/API gateway.
  3. New micro services deployed on the gateway.
  4. New routes defined/deployed onto any service.
 

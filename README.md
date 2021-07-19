@@ -23,3 +23,48 @@ In this fast moving agile world, number 3 and 4 helps internal security team to 
 
 ### All the alerts are notified via slack. 
 
+## Setup :
+
+### Prerequisites :
+
+>> Requires Python 3
+
+>> Runs on both Windows / Linux .
+
+>> install dependencies :
+```bash
+pip3 install requests python-dotenv
+```
+
+### Set the following environment variables  or create a .env file with the same.
+```bash
+USERNAME_KONG='' #username of the kong schema
+PWD_KONG=''   #password to the kong schema
+HOST_KONG='' #db host
+schema_kong='' #schema name
+slack_WebHookURL='' #slak webhook url for receiving the alerts
+```
+### define which plugins to monitor in the "monitored_plugins.txt" file
+example file: 
+```bash
+CORS
+rate-limiting
+plugin3
+plugin4
+```
+### we can also whitelist the services / routes to exclude from the mandatory plugin scan. This can be defined inside "whitelist.txt" file.
+example whitelist file looks like this.
+```bash
+{"service1":["route-id1","route-id2"],"service2":[],"service3":["route-id3"]}
+'''
+here, we whitelist two routes "route-id1","route-id2" of service "service1" from mandatory plugin scan. if we want to whitelist the whole service from the scan, we an do as done for service2 with routes as empty list.
+
+#### Now you are ready to run Laelaps! Set it up as cron job for real time monitoring.
+
+#### Snapshot of test results:
+
+![Laelaps](/images/Laelaps4.PNG)
+
+![Laelaps](/images/Laelaps5.PNG)
+
+## A big thanks to my teammate @akshaya(https://www.linkedin.com/in/akshaya-venkateswara-raja/) who did the initial brainstorming and co owns the code, without her the project would be dead.
